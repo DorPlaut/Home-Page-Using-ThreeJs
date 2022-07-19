@@ -153,7 +153,7 @@ footer {
   z-index: 2;
   margin-bottom: 0.5rem;
   width: 100vw;
-  font-size: 1.3rem;
+  font-size: 1rem;
   animation: Fade 0.5s linear forwards;
   animation-delay: 3s;
   opacity: 0;
