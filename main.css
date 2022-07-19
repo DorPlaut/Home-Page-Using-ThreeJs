@@ -144,7 +144,23 @@ button {
   width: 48%;
   cursor: pointer;
 }
-
+/* footer */
+footer {
+  color: var(--primaryColor);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  margin-bottom: 0.5rem;
+  width: 100vw;
+  font-size: 1.3rem;
+  animation: Fade 0.5s linear forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+footer a {
+  text-decoration: none;
+}
 /* animation */
 
 @keyframes upperLeftFade {
@@ -216,6 +232,10 @@ button {
     left: 0;
     text-align: center;
   }
+  #spacer {
+    display: inline-block;
+    width: 1%;
+  }
 }
 
 /* hover animation */
@@ -223,14 +243,16 @@ h1,
 h2,
 h3,
 i,
-button {
+button,
+footer a {
   transition: var(--transition);
 }
 
 h1:hover,
 h2:hover,
 h3:hover,
-i:hover {
+i:hover,
+footer a:hover {
   color: var(--hoverColor);
 }
 
