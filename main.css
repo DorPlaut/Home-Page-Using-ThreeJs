@@ -30,6 +30,7 @@
 }
 
 .page {
+  font-family: 'Open Sans', sans-serif;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -161,6 +162,42 @@ footer {
 footer a {
   text-decoration: none;
 }
+/* toggle button */
+.toggle-container {
+  z-index: 2;
+  position: fixed;
+  top: 4rem;
+  right: 5rem;
+  height: 50px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.toggle-btn {
+  border-radius: 20px;
+  background: var(--hoverColor);
+  height: 25px;
+  width: 70px;
+  text-align: center;
+}
+.toggle-btn p {
+  color: var(--backgroundColor);
+}
+.toggle {
+  border-radius: 20px;
+  background: var(--primaryColor);
+
+  height: 25px;
+  width: 40px;
+  transition: var(--transition);
+}
+.toggle-on {
+  transform: translate(30px);
+  background: green;
+}
+
 /* animation */
 
 @keyframes upperLeftFade {
@@ -232,9 +269,11 @@ footer a {
     left: 0;
     text-align: center;
   }
-  #spacer {
-    display: inline-block;
-    width: 1%;
+
+  .toggle-container {
+    position: fixed;
+    top: 90vh;
+    right: 5vw;
   }
 }
 
@@ -243,21 +282,20 @@ h1,
 h2,
 h3,
 i,
-button,
-footer a {
+button {
   transition: var(--transition);
 }
 
 h1:hover,
 h2:hover,
 h3:hover,
-i:hover,
-footer a:hover {
+i:hover {
   color: var(--hoverColor);
 }
 
 button:hover {
   background: var(--hoverColor);
 }
+
 
 /*# sourceMappingURL=main.css.map*/
