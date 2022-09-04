@@ -142,8 +142,6 @@ camera.position.y = 0;
 camera.position.z = 2.5;
 scene.add(camera);
 
-// Controls
-
 // TOGGLE TISH ONE!
 
 /**
@@ -171,7 +169,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
 // controlls
 const controls = new OrbitControls(camera, renderer.domElement);
-// controls.enabled = false;
+controls.enabled = false;
 
 // mouse control
 document.addEventListener('mousemove', onDocumentMouseMove);
